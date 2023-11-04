@@ -1,0 +1,50 @@
+name: Deploy documentation
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+jobs:
+  build_and_deploy:
+      runs-on: ubuntu-latest
+      steps:
+        - name: Checkout
+          uses: actions/checkout@v2
+
+        - name: Tailscale
+            # You may pin to the exact commit or the version.
+            # uses: tailscale/github-action@bf5e14e8ed9e05b947ef49eda83df60cf075d47e
+          uses: tailscale/github-action@v1
+          with:
+              # Your Tailscale authentication key, from the admin panel.
+            authkey: ${{ secrets.SHAFT_TAILSCALE_KEY }}
+              # Tailscale version to use.
+            version: 1.14.0 # default is 1.14.0
+
+        - name: Build And Push Img
+          run: |
+              docker build -t ${{ secrets.DOCKER_REGISTRY }}/nemesis-docs:latest .
+              docker push ${{ secrets.DOCKER_REGISTRY }}/nemesis-docs:latest
+
+        - name: Deploy
+          uses: appleboy/ssh-action@master
+          env:
+            DOCKER_REGISTRY: ${{ secrets.DOCKER_REGISTRY }}
+          with:
+            host: ${{ secrets.SERVER_HOST }}
+            username: ${{ secrets.SERVER_USERNAME }}
+            password: ${{ secrets.SERVER_PASSWORD }}
+            port: ${{ secrets.SERVER_PORT }}
+            envs: DOCKER_REGISTRY
+            script: |
+              export PATH=$PATH:/usr/local/bin
+              export DOCKER_HOST=unix:///var/run/docker.sock
+              export DOCKER_REGISTRY=${DOCKER_REGISTRY}
+              
+              docker rmi $(docker images | grep '${DOCKER_REGISTRY}/nemesis-docs:latest' | awk '{print $3}') || true
+              docker pull ${DOCKER_REGISTRY}/nemesis-docs:latest
+              docker stop nemesis-docs-webserver || true
+              docker rm nemesis-docs-webserver || true
+              docker run -d --name nemesis-docs-webserver -v /etc/letsencrypt:/etc/letsencrypt -p 8081:80 -p 443:443 ${DOCKER_REGISTRY}/nemesis-docs:latest /bin/sh -c 'while true; do sleep 6h && nginx -s reload; done & nginx -g "daemon off;"'
