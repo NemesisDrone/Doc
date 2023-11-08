@@ -8,13 +8,15 @@ Welcome to Nemesis's documentation!
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
+   :caption: Le Projet
+   :hidden:
 
+   Notes de changements <docs/changelog.rst>
 
+.. toctree::
+   :maxdepth: 2
+   :caption: Notes Techniques
+   :hidden:
 
-Indices and tables
-==================
+   Logiciel Embarqué <docs/writeups/embeded_soft_archi.rst>
 
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
