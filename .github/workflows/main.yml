@@ -22,7 +22,15 @@ jobs:
             authkey: ${{ secrets.SHAFT_TAILSCALE_KEY }}
               # Tailscale version to use.
             version: 1.14.0 # default is 1.14.0
-
+        - name: install doc dependencies
+          run: |
+              sudo apt-get update
+              sudo apt-get install -y python3-pip
+              sudo pip3 install -r requirements-system.txt
+        - name: build docs
+          run: |
+              cd doc
+              make html
         - name: Build And Push Img
           run: |
               docker build -t ${{ secrets.DOCKER_REGISTRY }}/nemesis-docs:latest .
