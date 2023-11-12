@@ -1,4 +1,4 @@
-Architecture du Logiciel Embarqué
+Logiciels Embarqués
 =================================
 
 Cette note technique décrit l'architecture utilisée pour implémenter nos différents systèmes dans les contrôleurs
@@ -13,7 +13,7 @@ avec pour objectif principal la modularité et la flexibilité. Dans cette optiq
 L'utilisation de ``Docker`` nous permet également de reproduire en parie notre environnement de production pour une
 plus grande facilité de développement.
 
-.. figure:: ../assets/embeded_soft_archi_1.png
+.. figure:: ../assets/embeded_software_1.png
     :alt: img
     :figclass: align-center
     :width: 50%

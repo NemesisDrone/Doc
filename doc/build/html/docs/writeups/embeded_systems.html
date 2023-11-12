@@ -1,15 +1,15 @@
 <!doctype html>
-<html class="no-js" lang="fr" data-content_root="../../">
+<html class="no-js" lang="fr" data-content_root="">
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
-    <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
-<link rel="index" title="Index" href="../../genindex.html" /><link rel="search" title="Recherche" href="../../search.html" /><link rel="prev" title="Changelog" href="../changelog.html" />
+    <meta name="color-scheme" content="light dark"><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+<link rel="index" title="Index" href="../../genindex.html" /><link rel="search" title="Recherche" href="../../search.html" /><link rel="next" title="Logiciels Embarqués" href="embeded_software.html" /><link rel="prev" title="Changelog" href="../changelog.html" />
 
-    <link rel="shortcut icon" href="../../_static/light_logo.png"/><!-- Generated with Sphinx 7.2.6 and Furo 2023.09.10 -->
-        <title>Architecture du Logiciel Embarqué - Nemesis</title>
-      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=a746c00c" />
-    <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?v=135e06be" />
-    <link rel="stylesheet" type="text/css" href="../../_static/styles/furo-extensions.css?v=36a5483c" />
+    <link rel="shortcut icon" href="../../_static/light_logo.png"/><!-- Generated with Sphinx 6.2.1 and Furo 2023.09.10 -->
+        <title>Systèmes Embarqués - Nemesis</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?digest=369552022d0b975c8e74270ce6eabe0fb7978f24" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/furo-extensions.css?digest=30d1aed668e5c3a91c3e3bf6a60b675221979f0e" />
     
     
 
@@ -159,11 +159,12 @@
 <div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
   <p class="caption" role="heading"><span class="caption-text">Le Projet</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../changelog.html">Notes de changements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../changelog.html">Changements</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Notes Techniques</span></p>
 <ul class="current">
-<li class="toctree-l1 current current-page"><a class="current reference internal" href="#">Logiciel Embarqué</a></li>
+<li class="toctree-l1 current current-page"><a class="current reference internal" href="#">Systèmes Embarqués</a></li>
+<li class="toctree-l1"><a class="reference internal" href="embeded_software.html">Logiciels Embarqués</a></li>
 </ul>
 
 </div>
@@ -198,31 +199,45 @@
           </label>
         </div>
         <article role="main">
-          <section id="architecture-du-logiciel-embarque">
-<h1>Architecture du Logiciel Embarqué<a class="headerlink" href="#architecture-du-logiciel-embarque" title="Link to this heading">#</a></h1>
-<p>Cette note technique décrit l’architecture utilisée pour implémenter nos différents systèmes dans les contrôleurs
-embarqués.</p>
-<section id="modularite">
-<h2>Modularité<a class="headerlink" href="#modularite" title="Link to this heading">#</a></h2>
-<p>La possibilité d’évolution hardware et les différentes versions de composants nous ont poussés à concevoir nos systèmes
-avec pour objectif principal la modularité et la flexibilité. Dans cette optique, nous avons choisi d’utiliser
-<code class="docutils literal notranslate"><span class="pre">Docker</span></code> pour déployer facilement nos solutions sur différents hardwares.</p>
-<p>L’utilisation de <code class="docutils literal notranslate"><span class="pre">Docker</span></code> nous permet également de reproduire en parie notre environnement de production pour une
-plus grande facilité de développement.</p>
-<figure class="align-center align-default">
-<a class="reference internal image-reference" href="../../_images/embeded_soft_archi_1.png"><img alt="img" src="../../_images/embeded_soft_archi_1.png" style="width: 50%;" /></a>
-</figure>
-</section>
+          <section id="systemes-embarques">
+<h1>Systèmes Embarqués<a class="headerlink" href="#systemes-embarques" title="Lien permanent vers cette rubrique">#</a></h1>
+<p>Nemesis est un UAV de type avion, motorisé et doté de multiples composants que nous détaillons ci-dessous.</p>
 <section id="composants">
-<h2>Composants<a class="headerlink" href="#composants" title="Link to this heading">#</a></h2>
-<p>Dans l’optique de la modularité nous avons choisi de découper nos systèmes en composants. Chaque composant s’exécute
-dans un processus distinct et communique avec les autres via Redis.</p>
-<p>La classe <code class="docutils literal notranslate"><span class="pre">IPC</span></code> s’occupe de la gestion de la communication inter-processus avec un système de routes.
-Chaque composant peut ainsi définir des fonctions à appeler lors de la réception d’un message sur des routes précises
-et peut également envoyer des messages sur des routes. Chaque route utilisée est indiquée dans la documentation de la
-partie embarquée.</p>
-<p>Un manager s’occupe de gérer les composants, en le lui indiquant via l’IPC, il peut démarrer, arrêter ou redémarrer des
-composants, cela nous permet d’avoir un contrôle total sur les différents composants logiciels directement depuis l’UI.</p>
+<h2>Composants<a class="headerlink" href="#composants" title="Lien permanent vers cette rubrique">#</a></h2>
+<section id="chaine-de-propulsion-et-d-alimentation">
+<h3>Chaîne de propulsion et d’alimentation<a class="headerlink" href="#chaine-de-propulsion-et-d-alimentation" title="Lien permanent vers cette rubrique">#</a></h3>
+<p>Le choix de ces composants étant dépendant des modèles et prototypes, nous ne le détaillerons pas ici.
+L’alimentation se fait par une batterie LiPo 3S 11.1V. Un ESC permet de contrôler le moteur brushless et son BEC
+permet d’alimenter le contrôleur de vol en 5V 3A.</p>
+</section>
+<section id="controleur-de-vol">
+<h3>Contrôleur de vol<a class="headerlink" href="#controleur-de-vol" title="Lien permanent vers cette rubrique">#</a></h3>
+<p>Nos contrôleurs de vol sont des Raspberry Pi 4B 2Go et 3A+ 1Go équipés de nos <a class="reference internal" href="embeded_software.html"><span class="doc">logiciels</span></a>.</p>
+<p>La connectivité 4G et les données de positionnement sont acquises par un <a class="reference external" href="https://www.waveshare.com/wiki/SIM7600E-H_4G_HAT">SIM7600G-H HAT</a>.</p>
+<figure class="align-center" id="id1">
+<a class="reference internal image-reference" href="../../_images/embeded_systems_1.png"><img alt="LTE/GNSS" src="../../_images/embeded_systems_1.png" style="width: 25%;" /></a>
+<figcaption>
+<p><span class="caption-text">LTE/GNSS Hat</span><a class="headerlink" href="#id1" title="Lien permanent vers cette image">#</a></p>
+</figcaption>
+</figure>
+<p>Les mesures d’orientation, d’accélération de température et de pression sont acquises par un <a class="reference external" href="https://www.raspberrypi.com/products/sense-hat/">Sense Hat</a>.</p>
+<figure class="align-center" id="id2">
+<a class="reference internal image-reference" href="../../_images/embeded_systems_2.png"><img alt="Sense Hat" src="../../_images/embeded_systems_2.png" style="width: 25%;" /></a>
+<figcaption>
+<p><span class="caption-text">Sense Hat (9-DOF IMU, temp., humidity, pressure)</span><a class="headerlink" href="#id2" title="Lien permanent vers cette image">#</a></p>
+</figcaption>
+</figure>
+<p>Pour les mesures de distance au sol, nous utilisons 2 VL53L0X, des capteurs de distance laser à temps de vol.</p>
+<figure class="align-center" id="id3">
+<a class="reference internal image-reference" href="../../_images/embeded_systems_3.png"><img alt="Optical Distance Sensor" src="../../_images/embeded_systems_3.png" style="width: 25%;" /></a>
+<figcaption>
+<p><span class="caption-text">VL53L0X distance sensor</span><a class="headerlink" href="#id3" title="Lien permanent vers cette image">#</a></p>
+</figcaption>
+</figure>
+<p>Nemesis est aussi doté d’une liaison radio pour les tests et en cas de perte de la connectivité 4G. Nous utilisons
+un combo FS-i10X et FS-iA10B.
+S’ajoute à cela des câbles et de cervos pour le contrôle des gouvernes.</p>
+</section>
 </section>
 </section>
 
@@ -231,7 +246,15 @@ composants, cela nous permet d’avoir un contrôle total sur les différents co
       <footer>
         
         <div class="related-pages">
-          
+          <a class="next-page" href="embeded_software.html">
+              <div class="page-info">
+                <div class="context">
+                  <span>Next</span>
+                </div>
+                <div class="title">Logiciels Embarqués</div>
+              </div>
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+            </a>
           <a class="prev-page" href="../changelog.html">
               <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
               <div class="page-info">
@@ -273,9 +296,12 @@ composants, cela nous permet d’avoir un contrôle total sur les différents co
         <div class="toc-tree-container">
           <div class="toc-tree">
             <ul>
-<li><a class="reference internal" href="#">Architecture du Logiciel Embarqué</a><ul>
-<li><a class="reference internal" href="#modularite">Modularité</a></li>
-<li><a class="reference internal" href="#composants">Composants</a></li>
+<li><a class="reference internal" href="#">Systèmes Embarqués</a><ul>
+<li><a class="reference internal" href="#composants">Composants</a><ul>
+<li><a class="reference internal" href="#chaine-de-propulsion-et-d-alimentation">Chaîne de propulsion et d’alimentation</a></li>
+<li><a class="reference internal" href="#controleur-de-vol">Contrôleur de vol</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -287,10 +313,10 @@ composants, cela nous permet d’avoir un contrôle total sur les différents co
       
     </aside>
   </div>
-</div><script src="../../_static/documentation_options.js?v=05dadb3a"></script>
-    <script src="../../_static/doctools.js?v=888ff710"></script>
-    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
-    <script src="../../_static/scripts/furo.js?v=32e29ea5"></script>
-    <script src="../../_static/translations.js?v=d99ca74e"></script>
+</div><script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/sphinx_highlight.js"></script>
+    <script src="../../_static/scripts/furo.js"></script>
+    <script src="../../_static/translations.js"></script>
     </body>
 </html>

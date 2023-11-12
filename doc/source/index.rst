@@ -11,12 +11,13 @@ Welcome to Nemesis's documentation!
    :caption: Le Projet
    :hidden:
 
-   Notes de changements <docs/changelog.rst>
+   Changements <docs/changelog.rst>
 
 .. toctree::
    :maxdepth: 2
    :caption: Notes Techniques
    :hidden:
 
-   Logiciel Embarqué <docs/writeups/embeded_soft_archi.rst>
+   Systèmes Embarqués <docs/writeups/embeded_systems>
+   Logiciels Embarqués <docs/writeups/embeded_software>
 
