@@ -20,4 +20,7 @@ Welcome to Nemesis's documentation!
 
    Systèmes Embarqués <docs/writeups/embeded_systems>
    Logiciels Embarqués <docs/writeups/embeded_software>
+   Interface utilisateur <docs/writeups/user_interfaces.rst>
+   Base serveur <docs/writeups/ground.rst>
+
 

@@ -1,15 +1,15 @@
 <!doctype html>
-<html class="no-js" lang="fr" data-content_root="">
+<html class="no-js" lang="fr" data-content_root="../../">
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
-    <meta name="color-scheme" content="light dark"><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
-<link rel="index" title="Index" href="../../genindex.html" /><link rel="search" title="Recherche" href="../../search.html" /><link rel="prev" title="Systèmes Embarqués" href="embeded_systems.html" />
+    <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="index" title="Index" href="../../genindex.html" /><link rel="search" title="Recherche" href="../../search.html" /><link rel="next" title="Interface utilisateur" href="user_interfaces.html" /><link rel="prev" title="Systèmes Embarqués" href="embeded_systems.html" />
 
-    <link rel="shortcut icon" href="../../_static/light_logo.png"/><!-- Generated with Sphinx 6.2.1 and Furo 2023.09.10 -->
+    <link rel="shortcut icon" href="../../_static/light_logo.png"/><!-- Generated with Sphinx 7.2.6 and Furo 2023.09.10 -->
         <title>Logiciels Embarqués - Nemesis</title>
-      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?digest=369552022d0b975c8e74270ce6eabe0fb7978f24" />
-    <link rel="stylesheet" type="text/css" href="../../_static/styles/furo-extensions.css?digest=30d1aed668e5c3a91c3e3bf6a60b675221979f0e" />
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?v=135e06be" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/furo-extensions.css?v=36a5483c" />
     
     
 
@@ -165,6 +165,8 @@
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="embeded_systems.html">Systèmes Embarqués</a></li>
 <li class="toctree-l1 current current-page"><a class="current reference internal" href="#">Logiciels Embarqués</a></li>
+<li class="toctree-l1"><a class="reference internal" href="user_interfaces.html">Interface utilisateur</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ground.html">Base serveur</a></li>
 </ul>
 
 </div>
@@ -200,11 +202,11 @@
         </div>
         <article role="main">
           <section id="logiciels-embarques">
-<h1>Logiciels Embarqués<a class="headerlink" href="#logiciels-embarques" title="Lien permanent vers cette rubrique">#</a></h1>
+<h1>Logiciels Embarqués<a class="headerlink" href="#logiciels-embarques" title="Link to this heading">#</a></h1>
 <p>Cette note technique décrit l’architecture utilisée pour implémenter nos différents systèmes dans les contrôleurs
 embarqués.</p>
 <section id="modularite">
-<h2>Modularité<a class="headerlink" href="#modularite" title="Lien permanent vers cette rubrique">#</a></h2>
+<h2>Modularité<a class="headerlink" href="#modularite" title="Link to this heading">#</a></h2>
 <p>La possibilité d’évolution hardware et les différentes versions de composants nous ont poussés à concevoir nos systèmes
 avec pour objectif principal la modularité et la flexibilité. Dans cette optique, nous avons choisi d’utiliser
 <code class="docutils literal notranslate"><span class="pre">Docker</span></code> pour déployer facilement nos solutions sur différents hardwares.</p>
@@ -215,7 +217,7 @@ plus grande facilité de développement.</p>
 </figure>
 </section>
 <section id="composants">
-<h2>Composants<a class="headerlink" href="#composants" title="Lien permanent vers cette rubrique">#</a></h2>
+<h2>Composants<a class="headerlink" href="#composants" title="Link to this heading">#</a></h2>
 <p>Dans l’optique de la modularité nous avons choisi de découper nos systèmes en composants. Chaque composant s’exécute
 dans un processus distinct et communique avec les autres via Redis.</p>
 <p>La classe <code class="docutils literal notranslate"><span class="pre">IPC</span></code> s’occupe de la gestion de la communication inter-processus avec un système de routes.
@@ -232,7 +234,15 @@ composants, cela nous permet d’avoir un contrôle total sur les différents co
       <footer>
         
         <div class="related-pages">
-          
+          <a class="next-page" href="user_interfaces.html">
+              <div class="page-info">
+                <div class="context">
+                  <span>Next</span>
+                </div>
+                <div class="title">Interface utilisateur</div>
+              </div>
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+            </a>
           <a class="prev-page" href="embeded_systems.html">
               <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
               <div class="page-info">
@@ -288,10 +298,10 @@ composants, cela nous permet d’avoir un contrôle total sur les différents co
       
     </aside>
   </div>
-</div><script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
-    <script src="../../_static/doctools.js"></script>
-    <script src="../../_static/sphinx_highlight.js"></script>
-    <script src="../../_static/scripts/furo.js"></script>
-    <script src="../../_static/translations.js"></script>
+</div><script src="../../_static/documentation_options.js?v=05dadb3a"></script>
+    <script src="../../_static/doctools.js?v=888ff710"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/scripts/furo.js?v=32e29ea5"></script>
+    <script src="../../_static/translations.js?v=d99ca74e"></script>
     </body>
 </html>

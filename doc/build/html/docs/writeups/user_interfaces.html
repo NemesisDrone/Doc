@@ -3,10 +3,10 @@
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
     <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
-<link rel="index" title="Index" href="../../genindex.html" /><link rel="search" title="Recherche" href="../../search.html" /><link rel="next" title="Logiciels Embarqués" href="embeded_software.html" /><link rel="prev" title="Changelog" href="../changelog.html" />
+<link rel="index" title="Index" href="../../genindex.html" /><link rel="search" title="Recherche" href="../../search.html" /><link rel="next" title="Base serveur" href="ground.html" /><link rel="prev" title="Logiciels Embarqués" href="embeded_software.html" />
 
     <link rel="shortcut icon" href="../../_static/light_logo.png"/><!-- Generated with Sphinx 7.2.6 and Furo 2023.09.10 -->
-        <title>Systèmes Embarqués - Nemesis</title>
+        <title>Interface utilisateur - Nemesis</title>
       <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=a746c00c" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?v=135e06be" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles/furo-extensions.css?v=36a5483c" />
@@ -163,9 +163,9 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Notes Techniques</span></p>
 <ul class="current">
-<li class="toctree-l1 current current-page"><a class="current reference internal" href="#">Systèmes Embarqués</a></li>
+<li class="toctree-l1"><a class="reference internal" href="embeded_systems.html">Systèmes Embarqués</a></li>
 <li class="toctree-l1"><a class="reference internal" href="embeded_software.html">Logiciels Embarqués</a></li>
-<li class="toctree-l1"><a class="reference internal" href="user_interfaces.html">Interface utilisateur</a></li>
+<li class="toctree-l1 current current-page"><a class="current reference internal" href="#">Interface utilisateur</a></li>
 <li class="toctree-l1"><a class="reference internal" href="ground.html">Base serveur</a></li>
 </ul>
 
@@ -201,44 +201,65 @@
           </label>
         </div>
         <article role="main">
-          <section id="systemes-embarques">
-<h1>Systèmes Embarqués<a class="headerlink" href="#systemes-embarques" title="Link to this heading">#</a></h1>
-<p>Nemesis est un UAV de type avion, motorisé et doté de multiples composants que nous détaillons ci-dessous.</p>
-<section id="composants">
-<h2>Composants<a class="headerlink" href="#composants" title="Link to this heading">#</a></h2>
-<section id="chaine-de-propulsion-et-d-alimentation">
-<h3>Chaîne de propulsion et d’alimentation<a class="headerlink" href="#chaine-de-propulsion-et-d-alimentation" title="Link to this heading">#</a></h3>
-<p>Le choix de ces composants étant dépendant des modèles et prototypes, nous ne le détaillerons pas ici.
-L’alimentation se fait par une batterie LiPo 3S 11.1V. Un ESC permet de contrôler le moteur brushless et son BEC
-permet d’alimenter le contrôleur de vol en 5V 3A.</p>
+          <section id="interface-utilisateur">
+<h1>Interface utilisateur<a class="headerlink" href="#interface-utilisateur" title="Link to this heading">#</a></h1>
+<p>Cette note technique décrit le fonctionnement de l’interface utilisateur permettant de piloter, visualiser et configurer les différents systèmes du drone.</p>
+<section id="objectif">
+<h2>Objectif<a class="headerlink" href="#objectif" title="Link to this heading">#</a></h2>
+<p>L’objectif premier de l’interface utilisateur est de permettre de piloter, visualiser et configurer le drone à distance et depuis n’importe quel appareil doté d’un navigateur web et une connexion à internet. L’interface se veut, par sa conception, évolutive et modulaire afin de pouvoir ajouter de nouveaux systèmes et fonctionnalités liés au drone.</p>
 </section>
-<section id="controleur-de-vol">
-<h3>Contrôleur de vol<a class="headerlink" href="#controleur-de-vol" title="Link to this heading">#</a></h3>
-<p>Nos contrôleurs de vol sont des Raspberry Pi 4B 2Go et 3A+ 1Go équipés de nos <a class="reference internal" href="embeded_software.html"><span class="doc">logiciels</span></a>.</p>
-<p>La connectivité 4G et les données de positionnement sont acquises par un <a class="reference external" href="https://www.waveshare.com/wiki/SIM7600E-H_4G_HAT">SIM7600G-H HAT</a>.</p>
-<figure class="align-center" id="id1">
-<a class="reference internal image-reference" href="../../_images/embeded_systems_1.png"><img alt="LTE/GNSS" src="../../_images/embeded_systems_1.png" style="width: 25%;" /></a>
-<figcaption>
-<p><span class="caption-text">LTE/GNSS Hat</span><a class="headerlink" href="#id1" title="Link to this image">#</a></p>
-</figcaption>
+<section id="choix-des-technologies">
+<h2>Choix des technologies<a class="headerlink" href="#choix-des-technologies" title="Link to this heading">#</a></h2>
+<p>Le choix des technologies utilisées pour le développement de l’interface utilisateur s’est porté sur :</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://vuejs.org/">Vue.js 3</a>: Framework JavaScript populaire, bien documenté et simple à prendre en main. Permettant à n’importe qui de contribuer au développement de l’interface.</p></li>
+<li><p><a class="reference external" href="https://nuxt.com/">Nuxt.js 3</a>: Framework basé sur Vue.js, permettant de développer une grosse application de façon intuitive et surtout maintenable dans le temps.</p></li>
+<li><p><a class="reference external" href="https://www.typescriptlang.org/">TypeScript</a>: Langage de programmation typé permettant de développer des applications plus robustes et maintenables dans le temps.</p></li>
+</ul>
+<p>Nous avons également choisi d’utiliser :</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://tailwindcss.com/">Tailwind CSS</a>: Framework CSS permettant de développer le style d’une application de façon simple et rapide sous forme de composants.</p></li>
+<li><p><a class="reference external" href="https://www.shadcn-vue.com/">ShadeCN</a>: Librairie de composants pour le développement de composants plus complexes.</p></li>
+</ul>
+</section>
+<section id="fonctionnalites">
+<h2>Fonctionnalités<a class="headerlink" href="#fonctionnalites" title="Link to this heading">#</a></h2>
+<section id="authentification">
+<h3>Authentification<a class="headerlink" href="#authentification" title="Link to this heading">#</a></h3>
+<p>Pour assurer la sécurité de l’interface, nous avons mis en place un système d’authentification basé sur <a class="reference external" href="https://jwt.io/">JWT</a>.
+Un token est généré par le serveur lors de la connexion et est valide pendant 60 minutes. Ce token assure l’identification de l’utilisateur.</p>
+<figure class="align-center">
+<img alt="Authentification" src="../../_images/nemesis-login.png" />
 </figure>
-<p>Les mesures d’orientation, d’accélération de température et de pression sont acquises par un <a class="reference external" href="https://www.raspberrypi.com/products/sense-hat/">Sense Hat</a>.</p>
-<figure class="align-center" id="id2">
-<a class="reference internal image-reference" href="../../_images/embeded_systems_2.png"><img alt="Sense Hat" src="../../_images/embeded_systems_2.png" style="width: 25%;" /></a>
-<figcaption>
-<p><span class="caption-text">Sense Hat (9-DOF IMU, temp., humidity, pressure)</span><a class="headerlink" href="#id2" title="Link to this image">#</a></p>
-</figcaption>
+</section>
+<section id="affichage-des-donnees-captees-et-renvoyees-par-le-drone">
+<h3>Affichage des données captées et renvoyées par le drone<a class="headerlink" href="#affichage-des-donnees-captees-et-renvoyees-par-le-drone" title="Link to this heading">#</a></h3>
+<p>L’interface permet d’afficher les données captées par le drone en temps réel.
+Comme par exemple la position GPS affiché sur une carte, le flux vidéo, la position relative du drone retranscrit sur un modèle 3d…</p>
+<p>Ou encore des données brutes comme l’altitude, la vitesse, la vitesse moteur, la tension de la batterie, l’état de connexion du drone, les logs…</p>
+<p>L’objectif est de pouvoir afficher les données captées par le drone pouvant servir d’aide au pilotage à distance.</p>
+<figure class="align-center">
+<img alt="Authentification" src="../../_images/nemesis-dashboard-1.png" />
 </figure>
-<p>Pour les mesures de distance au sol, nous utilisons 2 VL53L0X, des capteurs de distance laser à temps de vol.</p>
-<figure class="align-center" id="id3">
-<a class="reference internal image-reference" href="../../_images/embeded_systems_3.png"><img alt="Optical Distance Sensor" src="../../_images/embeded_systems_3.png" style="width: 25%;" /></a>
-<figcaption>
-<p><span class="caption-text">VL53L0X distance sensor</span><a class="headerlink" href="#id3" title="Link to this image">#</a></p>
-</figcaption>
-</figure>
-<p>Nemesis est aussi doté d’une liaison radio pour les tests et en cas de perte de la connectivité 4G. Nous utilisons
-un combo FS-i10X et FS-iA10B.
-S’ajoute à cela des câbles et de cervos pour le contrôle des gouvernes.</p>
+</section>
+<section id="pilotage-manuel-et-gestion-des-composants">
+<h3>Pilotage manuel et gestion des composants<a class="headerlink" href="#pilotage-manuel-et-gestion-des-composants" title="Link to this heading">#</a></h3>
+<p>L’interface permet de piloter le drone manuellement à l’aide d’une manette connectée à l’ordinateur.
+Le drone reçoit en temps réel les mouvements des joysticks analogique ou encore la vitesse moteur choisit par l’opérateur.</p>
+<p>Il est aussi possible d’éteindre/allumer/rédémarrer chaque composant du drone à distance.
+Dans le cas où un composant dysfonctionne, il est possible de le redémarrer sans avoir à se déplacer jusqu’au drone.</p>
+</section>
+<section id="pilotage-automatique-et-gestion-de-parcours">
+<h3>Pilotage automatique et gestion de parcours<a class="headerlink" href="#pilotage-automatique-et-gestion-de-parcours" title="Link to this heading">#</a></h3>
+<p>En attente de développement.</p>
+</section>
+<section id="gestion-de-la-camera-et-du-flux-video">
+<h3>Gestion de la caméra et du flux vidéo<a class="headerlink" href="#gestion-de-la-camera-et-du-flux-video" title="Link to this heading">#</a></h3>
+<p>En attente de développement.</p>
+</section>
+<section id="parametres-utilisateur-et-configuration-de-l-application">
+<h3>Paramètres utilisateur et configuration de l’application<a class="headerlink" href="#parametres-utilisateur-et-configuration-de-l-application" title="Link to this heading">#</a></h3>
+<p>En attente de développement.</p>
 </section>
 </section>
 </section>
@@ -248,23 +269,23 @@ S’ajoute à cela des câbles et de cervos pour le contrôle des gouvernes.</p>
       <footer>
         
         <div class="related-pages">
-          <a class="next-page" href="embeded_software.html">
+          <a class="next-page" href="ground.html">
               <div class="page-info">
                 <div class="context">
                   <span>Next</span>
                 </div>
-                <div class="title">Logiciels Embarqués</div>
+                <div class="title">Base serveur</div>
               </div>
               <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
             </a>
-          <a class="prev-page" href="../changelog.html">
+          <a class="prev-page" href="embeded_software.html">
               <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
               <div class="page-info">
                 <div class="context">
                   <span>Previous</span>
                 </div>
                 
-                <div class="title">Changelog</div>
+                <div class="title">Logiciels Embarqués</div>
                 
               </div>
             </a>
@@ -298,10 +319,16 @@ S’ajoute à cela des câbles et de cervos pour le contrôle des gouvernes.</p>
         <div class="toc-tree-container">
           <div class="toc-tree">
             <ul>
-<li><a class="reference internal" href="#">Systèmes Embarqués</a><ul>
-<li><a class="reference internal" href="#composants">Composants</a><ul>
-<li><a class="reference internal" href="#chaine-de-propulsion-et-d-alimentation">Chaîne de propulsion et d’alimentation</a></li>
-<li><a class="reference internal" href="#controleur-de-vol">Contrôleur de vol</a></li>
+<li><a class="reference internal" href="#">Interface utilisateur</a><ul>
+<li><a class="reference internal" href="#objectif">Objectif</a></li>
+<li><a class="reference internal" href="#choix-des-technologies">Choix des technologies</a></li>
+<li><a class="reference internal" href="#fonctionnalites">Fonctionnalités</a><ul>
+<li><a class="reference internal" href="#authentification">Authentification</a></li>
+<li><a class="reference internal" href="#affichage-des-donnees-captees-et-renvoyees-par-le-drone">Affichage des données captées et renvoyées par le drone</a></li>
+<li><a class="reference internal" href="#pilotage-manuel-et-gestion-des-composants">Pilotage manuel et gestion des composants</a></li>
+<li><a class="reference internal" href="#pilotage-automatique-et-gestion-de-parcours">Pilotage automatique et gestion de parcours</a></li>
+<li><a class="reference internal" href="#gestion-de-la-camera-et-du-flux-video">Gestion de la caméra et du flux vidéo</a></li>
+<li><a class="reference internal" href="#parametres-utilisateur-et-configuration-de-l-application">Paramètres utilisateur et configuration de l’application</a></li>
 </ul>
 </li>
 </ul>
