@@ -21,13 +21,18 @@ jobs:
           run: |
               cd doc
               make html
-        - name: Push generated webpage to another repository
-          uses: nkoppel/push-files-to-another-repository@1.1.2
-          env:
-            API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
+        - name: Copy Push Files action
+          uses: GuillaumeFalourd/copy-push-files@v1
           with:
-            source-files: 'doc/build/html'
-            destination-username: 'NemesisDrone'
-            destination-repository: 'nemesisdrone.github.io'
-            destination-directory: ''
-            commit-email: 'sh4ft.me@gmail.com'
+          # Files or directories to add separated by space
+            source_files: doc/build/html
+          # Commit message
+            commit_message: NemesisDroce/Doc CI/CD
+          # Branch to push the contents to
+            target_branch: main
+          # Directory to push the contents to on the new repository
+            target_dir: ./
+            remote_repository: https://github.com/NemesisDrone/nemesisdrone.github.io
+          # Token used to push the code
+            access_token: ${{ secrets.TOKEN_GITHUB }}
+          
