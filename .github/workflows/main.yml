@@ -25,7 +25,7 @@ jobs:
           uses: GuillaumeFalourd/copy-push-files@v1
           with:
           # Files or directories to add separated by space
-            source_files: doc/build/html
+            source_files: doc/build/html/
           # Commit message
             commit_message: NemesisDroce/Doc CI/CD
           # Branch to push the contents to
