@@ -1,4 +1,3 @@
 [build]
-  base = "doc"
   publish = "build/dirhtml"
   command = "make dirhtml"
