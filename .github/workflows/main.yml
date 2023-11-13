@@ -31,7 +31,7 @@ jobs:
           # Branch to push the contents to
             target_branch: main
           # Directory to push the contents to on the new repository
-            target_dir: ./
+            target_dir: ./docs
             remote_repository: https://github.com/NemesisDrone/nemesisdrone.github.io
           # Token used to push the code
             access_token: ${{ secrets.TOKEN_GITHUB }}
