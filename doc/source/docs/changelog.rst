@@ -5,11 +5,11 @@ Changements
     Avancement du projet par semaines, les fonctionnalités sont détaillés dans les notes techniques.
     L'ensemble des commits est disponible sur `l'organisation github <https://github.com/orgs/NemesisDrone/repositories>`_.
 
-Semaine 14/11 - 19/11
+Semaine 13/11 - 19/11
 ---------------------
 .. admonition:: Pierre
 
-    - todo
+    - Mise en place de l'intégration continue pour la documentation
 
 .. admonition:: Hugo
 
