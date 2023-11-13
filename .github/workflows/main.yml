@@ -12,3 +12,22 @@ jobs:
       steps:
         - name: Checkout
           uses: actions/checkout@v2
+        - name: install doc dependencies
+          run: |
+              sudo apt-get update
+              sudo apt-get install -y python3-pip
+              sudo pip3 install -r requirements-system.txt
+        - name: build docs
+          run: |
+              cd doc
+              make html
+        - name: Push generated webpage to another repository
+          uses: nkoppel/push-files-to-another-repository@1.1.0
+          env:
+            API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
+          with:
+            source-files: 'doc/build/html'
+            destination-username: 'NemesisDrone'
+            destination-repository: 'nemesisdrone.github.io'
+            destination-directory: ''
+            commit-email: 'sh4ft.me@gmail.com'
