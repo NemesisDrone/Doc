@@ -1,3 +1,4 @@
 [build]
-  publish = "doc/build/dirhtml"
-  command = "cd doc && make dirhtml"
+  base = "doc"
+  publish = "build/dirhtml"
+  command = "make dirhtml"
