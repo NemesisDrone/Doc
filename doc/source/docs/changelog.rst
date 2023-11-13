@@ -1,14 +1,36 @@
-Changelog
-=========
+Changements
+===========
 
 .. note::
     Avancement du projet par semaines, les fonctionnalités sont détaillés dans les notes techniques.
+    L'ensemble des commits est disponible sur `l'organisation github <https://github.com/orgs/NemesisDrone/repositories>`_.
 
-Semaine 13/11 - 19/11
+Semaine 14/11 - 19/11
 ---------------------
+.. admonition:: Pierre
+
+    - todo
+
+.. admonition:: Hugo
+
+    - todo
+
+.. admonition:: Emilio
+
+    - todo
+
+.. admonition:: Nicolas
+
+    - todo
 
 Semaine 06/11 - 12/11
 ---------------------
+
+.. admonition:: Pierre
+
+    - Implémentation du capteur laser (Drone & Interface)
+    - Implémentation d'un composant temporaire de simulation GPS
+    - Écriture de la note technique de l'interface utilisateur
 
 .. admonition:: Hugo
 
@@ -20,6 +42,14 @@ Semaine 06/11 - 12/11
 
 Semaine 30/10 - 05/11
 ---------------------
+
+.. admonition:: Pierre
+
+    - Implémentation de la gestion d'un contrôleur/manette de jeu sur l'interface (pour le pilotage du drone)
+    - Ajout de la gestion des états de composants sur l'interface (pour le démarrage/arrêt des composants)
+    - Création d'un système de layout pour l'interface (pour la gestion des différentes pages)
+    - Ajout de documentation pour la communication `Drone <-> Ground` et le système de layout de l'interface
+    - Amélioration de la tolérance aux fautes de la communication `Drone <-> Ground` (reconnexion automatique/timeout/anticrash)
 
 .. admonition:: Hugo
 
@@ -33,12 +63,26 @@ Semaine 30/10 - 05/11
 Semaine 23/10 - 29/10
 ---------------------
 
+.. admonition:: Pierre
+
+    - Implémentation de la communication `Drone <-> Ground (Base serveur)` via socket.
+    - Implémentation de la communication `Ground <-> Interface`.
+    - Mise en place de mécansime de détection de perte de connexion avec le drone & Support de reconnexion automatique
+    - Ajout d'un modèle 3D de drone sur l'interface
+
 .. admonition:: Hugo
 
     - Multiples fixes sur la documentation et le build de la partie Air.
 
 Semaine 16/10 - 22/10
 ---------------------
+
+.. admonition:: Pierre
+
+    - Mise en place de la communication websocket entre le backend et le frontend.
+    - Mise en place de la documentation permettant de lancer/expliquer les différentes partis du backend et du frontend.
+    - Ajouts de la gestion des logs venant du drone sur l'interface.
+    - Ajout de la gestion des composants du drone sur l'interface, avec la possibilité de les activer/désactiver/rédémarrer.
 
 .. admonition:: Hugo
 
@@ -47,12 +91,18 @@ Semaine 16/10 - 22/10
     - Ajout de tests unitaires pour l'IPC.
     - CI/CD pour la partie Air.
 
-Semaine 08/10 - 15/10
+Semaine 09/10 - 15/10
 ---------------------
+
+.. admonition:: Pierre
+
+    - Création de la base de développement de l'interface et du backend. Voir :doc:`Interface <writeups/user_interfaces>`
+    - Implémentation de l'authentification/connexion utilisateur
+    - Implémentation du tableau de bord : informations du drone, map GPS...
 
 .. admonition:: Hugo
 
-    - Creation et début de mise en place du repository pour le logiciel embarqué. Voir :doc:`Logiciels Embarqués <writeups/embeded_software>`.
-    - Mise en place de la documentation du logiciel embarqué et de docker.
-    - Création de la bibliothèque pour la communication inter process (IPC) et pour les composants.
-    - Création du manager pour gérer les composants.
+    - Création et début de mise en place du repository pour le logiciel embarqué. Voir :doc:`Logiciels Embarqués <writeups/embeded_software>`
+    - Mise en place de la documentation du logiciel embarqué et de docker
+    - Création de la bibliothèque pour la communication inter process (IPC) et pour les composants
+    - Création du manager pour gérer les composants
