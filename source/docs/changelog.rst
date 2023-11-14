@@ -17,7 +17,8 @@ Semaine 13/11 - 19/11
 
 .. admonition:: Emilio
 
-    - todo
+    - Implémentation changement de nom d'utilisateur
+    - Implémentation changement de mot de passe
 
 .. admonition:: Nicolas
 
@@ -39,6 +40,12 @@ Semaine 06/11 - 12/11
     - Intégration du Sense Hat en cours sur la partie Air (IMU).
     - Création d'une image personnalisée pour notre système d'exploitation.
     - Organisation de la documentation externe du projet, notes techniques et changements.
+
+.. admonition:: Emilio
+
+    - Définition d'une liste de potentiels sponsors
+    - Définition de nos besoins et de nos offres (flocage du drone aux couleurs de l'entreprise, possibilité de floquer un logo)
+    - Création d'une mail de description concis de notre projet pour les sponsors
 
 Semaine 30/10 - 05/11
 ---------------------
@@ -74,15 +81,16 @@ Semaine 23/10 - 29/10
 
     - Multiples fixes sur la documentation et le build de la partie Air.
 
+
 Semaine 16/10 - 22/10
 ---------------------
 
 .. admonition:: Pierre
 
     - Mise en place de la communication websocket entre le backend et le frontend.
-    - Mise en place de la documentation permettant de lancer/expliquer les différentes partis du backend et du frontend.
-    - Ajouts de la gestion des logs venant du drone sur l'interface.
-    - Ajout de la gestion des composants du drone sur l'interface, avec la possibilité de les activer/désactiver/rédémarrer.
+    - Mise en place de la documentation permettant de lancer/expliquer les différentes parties du backend et du frontend.
+    - Ajout de la gestion des logs venant du drone sur l'interface.
+    - Ajout de la gestion des composants du drone sur l'interface, avec la possibilité de les activer/désactiver/redémarrer.
 
 .. admonition:: Hugo
 
