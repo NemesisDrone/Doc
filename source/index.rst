@@ -22,5 +22,3 @@ Welcome to Nemesis's documentation!
    Logiciels Embarqués <docs/writeups/embeded_software>
    Interface utilisateur <docs/writeups/user_interfaces.rst>
    Base serveur <docs/writeups/ground.rst>
-
-

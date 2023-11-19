@@ -47,4 +47,4 @@ Pour les mesures de distance au sol, nous utilisons 2 VL53L0X, des capteurs de d
 
 Nemesis est aussi doté d'une liaison radio pour les tests et en cas de perte de la connectivité 4G. Nous utilisons
 un combo FS-i10X et FS-iA10B.
-S'ajoute à cela des câbles et de cervos pour le contrôle des gouvernes.
+S'ajoute à cela des câbles et de servos pour le contrôle des gouvernes.

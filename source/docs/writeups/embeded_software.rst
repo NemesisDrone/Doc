@@ -6,11 +6,11 @@ embarqués.
 
 Modularité
 ----------
-La possibilité d'évolution hardware et les différentes versions de composants nous ont poussés à concevoir nos systèmes
+La possibilité d'évolution matérielle et les différentes versions de composants nous ont poussé à concevoir nos systèmes
 avec pour objectif principal la modularité et la flexibilité. Dans cette optique, nous avons choisi d'utiliser
-``Docker`` pour déployer facilement nos solutions sur différents hardwares.
+``Docker`` pour déployer facilement nos solutions sur différents matériels.
 
-L'utilisation de ``Docker`` nous permet également de reproduire en parie notre environnement de production pour une
+L'utilisation de ``Docker`` nous permet également de reproduire en partie notre environnement de production pour une
 plus grande facilité de développement.
 
 .. figure:: ../assets/embeded_software_1.png

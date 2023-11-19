@@ -38,7 +38,7 @@ Un token est généré par le serveur lors de la connexion et est valide pendant
 Affichage des données captées et renvoyées par le drone
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 L'interface permet d'afficher les données captées par le drone en temps réel. 
-Comme par exemple la position GPS affiché sur une carte, le flux vidéo, la position relative du drone retranscrit sur un modèle 3d...
+Comme par exemple la position GPS affichée sur une carte, le flux vidéo, la position relative du drone retranscrite sur un modèle 3d...
 
 Ou encore des données brutes comme l'altitude, la vitesse, la vitesse moteur, la tension de la batterie, l'état de connexion du drone, les logs...
 
@@ -53,7 +53,7 @@ Pilotage manuel et gestion des composants
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 L'interface permet de piloter le drone manuellement à l'aide d'une manette connectée à l'ordinateur.
-Le drone reçoit en temps réel les mouvements des joysticks analogique ou encore la vitesse moteur choisit par l'opérateur.
+Le drone reçoit en temps réel les mouvements des joysticks analogiques ou encore la vitesse moteur choisie par l'opérateur.
 
 Il est aussi possible d'éteindre/allumer/rédémarrer chaque composant du drone à distance. 
 Dans le cas où un composant dysfonctionne, il est possible de le redémarrer sans avoir à se déplacer jusqu'au drone.
