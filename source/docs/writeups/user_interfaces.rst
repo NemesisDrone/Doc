@@ -66,7 +66,8 @@ En attente de développement.
 Gestion de la caméra et du flux vidéo
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-En attente de développement.
+Le flux vidéo est récupéré via WebSocket depuis le serveur au sol. Ce flux est ensuite affiché par l'intermédiaire de frames JPEG.
+La reconnexion au serveur en cas de perte de contact est automatique.
 
 Paramètres utilisateur et configuration de l'application
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
