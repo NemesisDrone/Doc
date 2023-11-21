@@ -5,6 +5,26 @@ Changements
     Avancement du projet par semaines, les fonctionnalités sont détaillés dans les notes techniques.
     L'ensemble des commits est disponible sur `l'organisation github <https://github.com/orgs/NemesisDrone/repositories>`_.
 
+Semaine 20/11 - 26/11
+---------------------
+.. admonition:: Pierre
+
+    - todo
+
+.. admonition:: Hugo
+
+    - todo
+
+.. admonition:: Emilio
+
+    - todo
+
+.. admonition:: Nicolas
+
+    - Passage du streaming vidéo H264 en JPEG
+    - Suppression de la pipeline GStreamer côté serveur.
+    - Implémentation du Nemesis Video Stream fini.
+
 Semaine 13/11 - 19/11
 ---------------------
 .. admonition:: Pierre
@@ -22,7 +42,8 @@ Semaine 13/11 - 19/11
 
 .. admonition:: Nicolas
 
-    - todo
+    - Reconnexion automatique au serveur pour la transmission vidéo.
+    - Début de l'implémentation du système de streaming vidéo sur le backend & UI.
 
 Semaine 06/11 - 12/11
 ---------------------
@@ -45,7 +66,12 @@ Semaine 06/11 - 12/11
 
     - Définition d'une liste de potentiels sponsors
     - Définition de nos besoins et de nos offres (flocage du drone aux couleurs de l'entreprise, possibilité de floquer un logo)
-    - Création d'une mail de description concis de notre projet pour les sponsors
+    - Création d'un mail de description concis de notre projet pour les sponsors
+
+.. admonition:: Nicolas
+
+    - Composant NVS du module Air en H264.
+    - Composant en mode serveur passé en mode client.
 
 Semaine 30/10 - 05/11
 ---------------------
@@ -67,6 +93,11 @@ Semaine 30/10 - 05/11
     - Mise en place d'Asana pour la gestion des tâches.
     - Création du repo Doc pour la documentation externe du projet.
 
+.. admonition:: Nicolas
+
+    - Script prototype pour le streaming en JPEG fonctionnel.
+    - Travaux pour du streaming vidéo en H264.
+
 Semaine 23/10 - 29/10
 ---------------------
 
@@ -81,6 +112,9 @@ Semaine 23/10 - 29/10
 
     - Multiples fixes sur la documentation et le build de la partie Air.
 
+.. admonition:: Nicolas
+
+    - Début des travaux sur le système de streaming vidéo.
 
 Semaine 16/10 - 22/10
 ---------------------
