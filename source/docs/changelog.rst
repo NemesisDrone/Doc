@@ -28,7 +28,14 @@ Semaine 13/11 - 19/11
 ---------------------
 .. admonition:: Pierre
 
-    - Mise en place de l'intégration continue pour la documentation.
+    - Mise en place de l'intégration continue pour les documentation technique, non technique et l'ui.
+    - Création du composant de communication drone<->ground.
+    - Implémentation de la récupération des informations utilisateur sur l'interface.
+    - Implémentation du rafraichissement JWT Token et ajout de l'authentification JWT pour les communications websocket.
+    - Amélioration de l'émulateur, ajout de la possibilité de récupérer la route sur l'IPC du drone.
+    - Amélioration de la map GPS, ajouts de fonctionnalités sur le modèlde 3d et le filtrage des logs.
+    - Implémentation du modèle 3D du drone avec des données en temps réel.
+    - Fixs et améliorations de componsants web/déploiement.
 
 .. admonition:: Hugo
 
