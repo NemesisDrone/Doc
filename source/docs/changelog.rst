@@ -29,7 +29,9 @@ Semaine 20/11 - 26/11
 
 .. admonition:: Pierre
 
-    - TODO
+    - Implémentation du composant de gestion du moteur brushless sur le drone. Séquence de calibration, démarrage, arrêt, contrôle de la vitesse.
+    - Test de tolérance aux fautes de la communication `Drone <-> Ground`. Amélioration de la qualité/nombre des données envoyées.
+    - Création d'un tableau de bord de surveillance vidéo/gestion des photos. Zoom sur photos, Sélection...
 
 .. admonition:: Hugo
 
