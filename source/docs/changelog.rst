@@ -5,7 +5,7 @@ Changements
     Avancement du projet par semaines, les fonctionnalités sont détaillés dans les notes techniques.
     L'ensemble des commits est disponible sur `l'organisation github <https://github.com/orgs/NemesisDrone/repositories>`_.
 
-Semaine 20/11 - 26/11
+Semaine 27/11 - 3/12
 ---------------------
 
 .. admonition:: Pierre
@@ -15,6 +15,27 @@ Semaine 20/11 - 26/11
 .. admonition:: Hugo
 
     - TODO
+
+.. admonition:: Emilio
+
+    - TODO
+
+.. admonition:: Nicolas
+
+    - TODO
+
+Semaine 20/11 - 26/11
+---------------------
+
+.. admonition:: Pierre
+
+    - TODO
+
+.. admonition:: Hugo
+
+    - Amélioration de l'intégration et de la compatibilité du SIM7600H (Rpi 2).
+    - Augmentation de la fréquence gps, divers tests menés pour l'augmentation de la précision (RTK).
+    - Construction et tests d'un premier prototype, cahier des charges et planification pour le 2e prototype.
 
 .. admonition:: Emilio
 
