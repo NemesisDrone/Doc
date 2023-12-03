@@ -22,7 +22,10 @@ Semaine 27/11 - 3/12
 
 .. admonition:: Nicolas
 
-    - TODO
+    - Possibilité de changer la configuration de transmission vidéo (framerate, taille, qualité d'encodage et compression).
+    - Ajout de changement de flux durant la transmission -> annulation des changements.
+    - Buffering des frames pour la transmission vidéo.
+    - Docker pour le serveur vidéo.
 
 Semaine 20/11 - 26/11
 ---------------------
