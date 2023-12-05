@@ -10,7 +10,9 @@ Semaine 27/11 - 3/12
 
 .. admonition:: Pierre
 
-    - TODO
+    - Amélioration du système de surveillance photo. Listing de photos/mouvement des photos...
+    - Amélioration/fix de l'interface/gestion des images de surveillance.
+    - Commencement de l'implémentation de l'api d'utilisation des servos-moteur.
 
 .. admonition:: Hugo
 
