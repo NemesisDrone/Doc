@@ -5,12 +5,14 @@ Changements
     Avancement du projet par semaines, les fonctionnalités sont détaillés dans les notes techniques.
     L'ensemble des commits est disponible sur `l'organisation github <https://github.com/orgs/NemesisDrone/repositories>`_.
 
-Semaine 4/11 - 10/12
+Semaine 4/12 - 10/12
 ---------------------
 
 .. admonition:: Pierre
 
-    - TODO
+    - Ajout de paramètres de configuration du drone temporaire. (Canaux GPIOs). Permettant de changer les pins utilisés pour les servos-moteurs/moteur brushless.
+    - Ajout d'un composant de configuration du drone.
+    - Amélioration/Fix/Refacto des outils d'appels API/Authentification websocket/JWT.
 
 .. admonition:: Hugo
 
@@ -19,7 +21,9 @@ Semaine 4/11 - 10/12
 
 .. admonition:: Emilio
 
-    - TODO
+    - Envoi mails partenariat
+    - prototypage
+    - simulateur
 
 .. admonition:: Nicolas
 
@@ -41,7 +45,8 @@ Semaine 27/11 - 3/12
 
 .. admonition:: Emilio
 
-    - TODO
+    - prototypage
+    - simulateur
 
 .. admonition:: Nicolas
 
