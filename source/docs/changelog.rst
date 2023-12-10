@@ -10,7 +10,9 @@ Semaine 4/11 - 10/12
 
 .. admonition:: Pierre
 
-    - TODO
+    - Ajout de paramètres de configuration du drone temporaire. (Canaux GPIOs). Permettant de changer les pins utilisés pour les servos-moteurs/moteur brushless.
+    - Ajout d'un composant de configuration du drone.
+    - Amélioration/Fix/Refacto des outils d'appels API/Authentification websocket/JWT.
 
 .. admonition:: Hugo
 
