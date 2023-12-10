@@ -15,6 +15,7 @@ Semaine 4/11 - 10/12
 .. admonition:: Hugo
 
     - 3D et prototypage.
+    - Refactoring et amélioration du code de la partie Air.
 
 .. admonition:: Emilio
 
