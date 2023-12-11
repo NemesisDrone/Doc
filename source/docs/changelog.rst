@@ -27,7 +27,7 @@ Semaine 4/12 - 10/12
 
 .. admonition:: Nicolas
 
-    - TODO
+    - Fix race condition & corruption mémoire avec GST sur le module NVS.
 
 Semaine 27/11 - 3/12
 ---------------------
