@@ -10,6 +10,13 @@ Semaine 4/12 - 10/12
 
 .. admonition:: Pierre
 
+    - Fix JWT Token et petite amélioration UX.
+
+Semaine 4/12 - 10/12
+---------------------
+
+.. admonition:: Pierre
+
     - Ajout de paramètres de configuration du drone temporaire. (Canaux GPIOs). Permettant de changer les pins utilisés pour les servos-moteurs/moteur brushless.
     - Ajout d'un composant de configuration du drone.
     - Amélioration/Fix/Refacto des outils d'appels API/Authentification websocket/JWT.
