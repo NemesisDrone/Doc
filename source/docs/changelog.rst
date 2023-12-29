@@ -5,6 +5,32 @@ Changements
     Avancement du projet par semaines, les fonctionnalités sont détaillés dans les notes techniques.
     L'ensemble des commits est disponible sur `l'organisation github <https://github.com/orgs/NemesisDrone/repositories>`_.
 
+Semaine 25/12 - 31/12
+---------------------
+
+.. admonition:: Pierre
+
+    - TODO
+
+.. admonition:: Hugo
+    
+    - TODO
+
+.. admonition:: Emilio
+    
+    - TODO
+
+.. admonition:: Nicolas
+        
+    - TODO
+
+Semaine 18/12 - 24/12
+---------------------
+
+.. admonition:: Pierre
+
+    - Implémentation du composant permettant de gérer les servos-moteurs en fonction des canaux choisis depuis l'interface.
+
 Semaine 11/12 - 17/12
 ---------------------
 
