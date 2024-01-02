@@ -5,7 +5,7 @@ Changements
     Avancement du projet par semaines, les fonctionnalités sont détaillés dans les notes techniques.
     L'ensemble des commits est disponible sur `l'organisation github <https://github.com/orgs/NemesisDrone/repositories>`_.
 
-Semaine 25/12 - 31/12
+Semaine 1/01 - 7/01
 ---------------------
 
 .. admonition:: Pierre
@@ -23,6 +23,16 @@ Semaine 25/12 - 31/12
 .. admonition:: Nicolas
         
     - TODO
+
+Semaine 25/12 - 31/12
+---------------------
+
+.. admonition:: Pierre
+
+    - Réimplement de la gestion API de l'interface. (Utilisation d'Axios à la place de ofetch), Amélioration de l'authentification/Sécurité JWT
+    - Ajout d'un système de notification/toast, de dialog, d'overlay lié au chargement, améliorations UX/UI, fix map GPS,cookies,... sur l'interface.
+    - Implémentation serveur de l'onglet surveillance. Suppression d'image, téléchargement et sélection via l'interface.
+    - Améliorations de la vue GPS, Ajout des bâtiments 3D. Ajout d'un modèle 3D du drone dans la vue GPS.
 
 Semaine 18/12 - 24/12
 ---------------------
