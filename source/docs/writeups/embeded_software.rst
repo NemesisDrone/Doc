@@ -32,4 +32,4 @@ Un manager s'occupe de gérer les composants, en le lui indiquant via l'IPC, il 
 composants, cela nous permet d'avoir un contrôle total sur les différents composants logiciels directement depuis l'UI.
 
 Un composant "NVS" (Nemesis Video Streaming) se charge de gérer la transmission de flux vidéo provenant de la caméra vers le serveur.
-Celui-ci se reconnecte automatiquement au serveur.
+Celui-ci se reconnecte automatiquement au serveur, et transmet la vidéo en frames JPEG.
