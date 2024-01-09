@@ -5,6 +5,26 @@ Changements
     Avancement du projet par semaines, les fonctionnalités sont détaillés dans les notes techniques.
     L'ensemble des commits est disponible sur `l'organisation github <https://github.com/orgs/NemesisDrone/repositories>`_.
 
+Semaine 8/01 - 14/01
+---------------------
+
+.. admonition:: Pierre
+
+    - TODO
+
+.. admonition:: Hugo
+    
+    - TODO
+
+.. admonition:: Emilio
+
+    - Apprentissage CSS 
+    - Apprentissage Javascript
+
+.. admonition:: Nicolas
+        
+    - TODO
+
 Semaine 1/01 - 7/01
 ---------------------
 
@@ -17,8 +37,9 @@ Semaine 1/01 - 7/01
     - TODO
 
 .. admonition:: Emilio
-    
-    - TODO
+
+    - Apprentissage HTML
+    - Apprentissage CSS 
 
 .. admonition:: Nicolas
         
@@ -33,6 +54,9 @@ Semaine 25/12 - 31/12
     - Ajout d'un système de notification/toast, de dialog, d'overlay lié au chargement, améliorations UX/UI, fix map GPS,cookies,... sur l'interface.
     - Implémentation serveur de l'onglet surveillance. Suppression d'image, téléchargement et sélection via l'interface.
     - Améliorations de la vue GPS, Ajout des bâtiments 3D. Ajout d'un modèle 3D du drone dans la vue GPS.
+.. admonition:: Emilio
+
+    - Apprentissage HTML
 
 Semaine 18/12 - 24/12
 ---------------------
