@@ -32,7 +32,9 @@ Semaine 1/01 - 7/01
 
 .. admonition:: Pierre
 
-    - TODO
+    - Multiple refacto et améliorations de la carte GPS. Possibilité de changer de nombreux paramètres (Satellite ou Nuit, élevation de terrain, suppression des labels), implémentation des rotations (roll,pitch,yaw) du modèle 3D du drone en fonction des données utilisateur.
+    - Ajout d'une ligne de direction du drone sur la carte GPS, dynamique en fonction du zoom de la carte et ajout de la taille dynamique du modèle 3D du drone. Ajout du centrage de la vue sur le drone en fonction de sa distance/position.
+    - Développement d'un système de Replay de logs/session de vol.
 
 .. admonition:: Hugo
     
@@ -46,16 +48,13 @@ Semaine 1/01 - 7/01
     - Apprentissage HTML
     - Apprentissage CSS 
 
-.. admonition:: Nicolas
-        
-    - TODO
 
 Semaine 25/12 - 31/12
 ---------------------
 
 .. admonition:: Pierre
 
-    - Réimplement de la gestion API de l'interface. (Utilisation d'Axios à la place de ofetch), Amélioration de l'authentification/Sécurité JWT
+    - Réimplémentation de la gestion API de l'interface. (Utilisation d'Axios à la place de ofetch), Amélioration de l'authentification/Sécurité JWT
     - Ajout d'un système de notification/toast, de dialog, d'overlay lié au chargement, améliorations UX/UI, fix map GPS,cookies,... sur l'interface.
     - Implémentation serveur de l'onglet surveillance. Suppression d'image, téléchargement et sélection via l'interface.
     - Améliorations de la vue GPS, Ajout des bâtiments 3D. Ajout d'un modèle 3D du drone dans la vue GPS.
