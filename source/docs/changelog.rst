@@ -292,7 +292,7 @@ Semaine 09/10 - 15/10
 
 .. admonition:: Hugo
 
-    - Création et début de mise en place du repository pour le logiciel embarqué. Voir :doc:`Logiciels Embarqués <writeups/embeded_software>`.
+    - Création et début de mise en place du repository pour le logiciel embarqué. Voir :doc:`Logiciels Embarqués <writeups/logiciel_embarqué>`.
     - Mise en place de la documentation du logiciel embarqué et de docker.
     - Création de la bibliothèque pour la communication inter process (IPC) et pour les composants.
     - Création du manager pour gérer les composants.
