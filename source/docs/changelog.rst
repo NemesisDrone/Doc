@@ -10,7 +10,11 @@ Semaine 8/01 - 14/01
 
 .. admonition:: Pierre
 
-    - TODO
+    - Développement d'un système de Replay de logs/session de vol (frontend).
+        - Possibilité de rejouer une session seconde par seconde, avec changement de la vitesse de lecture, de temporalité, play/pause...
+        - Position et rotations (roll,pitch,yaw) du drone sur une carte GPS.
+        - Graphique d'altitude en fonction du temps.
+        - Graphique de la vitesse en fonction du temps.
 
 .. admonition:: Hugo
     
@@ -23,9 +27,6 @@ Semaine 8/01 - 14/01
     - Apprentissage CSS 
     - Apprentissage Javascript
 
-.. admonition:: Nicolas
-        
-    - TODO
 
 Semaine 1/01 - 7/01
 ---------------------
