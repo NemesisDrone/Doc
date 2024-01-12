@@ -18,7 +18,6 @@ Welcome to Nemesis's documentation!
    :caption: Notes Techniques
    :hidden:
 
-   Systèmes Embarqués <docs/writeups/embeded_systems>
-   Logiciels Embarqués <docs/writeups/embeded_software>
+   Logiciel Embarqué <docs/writeups/logiciel_embarqué.rst>
    Interface utilisateur <docs/writeups/user_interfaces.rst>
    Base serveur <docs/writeups/ground.rst>
