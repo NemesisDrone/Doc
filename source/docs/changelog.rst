@@ -14,7 +14,9 @@ Semaine 8/01 - 14/01
 
 .. admonition:: Hugo
     
-    - TODO
+    - Fix variées sur la partie Air.
+    - Ajout de documentation et clean de code.
+    - Début de la construction du prototype 2.
 
 .. admonition:: Emilio
 
@@ -34,7 +36,10 @@ Semaine 1/01 - 7/01
 
 .. admonition:: Hugo
     
-    - TODO
+    - Refactoring de la partie Air, amélioration de la maintenabilité et de la stabilité du code sur l'IPC,
+      le système de composants, le logger et le manager, code tests unitaires.
+    - Refactoring de l'intégration du SIM7600H, sense hat et VL53 pour une meilleur gestion des erreurs et une
+      émulation de données automatique.
 
 .. admonition:: Emilio
 
@@ -54,9 +59,15 @@ Semaine 25/12 - 31/12
     - Ajout d'un système de notification/toast, de dialog, d'overlay lié au chargement, améliorations UX/UI, fix map GPS,cookies,... sur l'interface.
     - Implémentation serveur de l'onglet surveillance. Suppression d'image, téléchargement et sélection via l'interface.
     - Améliorations de la vue GPS, Ajout des bâtiments 3D. Ajout d'un modèle 3D du drone dans la vue GPS.
+
 .. admonition:: Emilio
 
     - Apprentissage HTML
+
+.. admonition:: Hugo
+
+    - Tests menés sur le GPS.
+    - Début du refacto de la partie Air.
 
 Semaine 18/12 - 24/12
 ---------------------
@@ -71,6 +82,10 @@ Semaine 11/12 - 17/12
 .. admonition:: Pierre
 
     - Fix JWT Token et petite amélioration UX.
+
+.. admonitions:: Hugo
+
+    - Prototypage.
 
 Semaine 4/12 - 10/12
 ---------------------
