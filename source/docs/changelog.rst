@@ -16,6 +16,11 @@ Semaine 15/01 - 21/01
     - Fix JWT, map, graphique de vitesse et d'altitude du replay,... 
     - Refacto websocket, composant de communication sur le drone, fausse donnée de replay et images de monitoring...
 
+.. admonition:: Nicolas
+
+    - Augmentation du contraste pour l'affichage du yaw/pitch/roll.
+    - Tentative de passage de flux JPEG-JEPG en flux H264-JPEG.
+
 Semaine 8/01 - 14/01
 ---------------------
 
@@ -38,6 +43,10 @@ Semaine 8/01 - 14/01
     - Apprentissage CSS 
     - Apprentissage Javascript
 
+.. admonition:: Nicolas
+
+    - Affichage du pitch/yaw/roll sur le stream vidéo.
+    - Possibilité d'ajouter des données GPS aux frames JPEG.
 
 Semaine 1/01 - 7/01
 ---------------------
