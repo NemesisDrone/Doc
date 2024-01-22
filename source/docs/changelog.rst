@@ -4,6 +4,8 @@ Changements
 .. note::
     Avancement du projet par semaines, les fonctionnalités sont détaillés dans les notes techniques.
     L'ensemble des commits est disponible sur `l'organisation github <https://github.com/orgs/NemesisDrone/repositories>`_.
+Semaine 22/01 - 29/01
+---------------------
 
 
 Semaine 15/01 - 21/01
@@ -15,6 +17,9 @@ Semaine 15/01 - 21/01
     - Commencement de la mise en place de l'enregistrement pour le replay.
     - Fix JWT, map, graphique de vitesse et d'altitude du replay,... 
     - Refacto websocket, composant de communication sur le drone, fausse donnée de replay et images de monitoring...
+
+.. admonition:: Emilio
+    -Apprentissage JavaScript
 
 .. admonition:: Nicolas
 
