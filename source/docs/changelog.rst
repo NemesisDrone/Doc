@@ -4,9 +4,16 @@ Changements
 .. note::
     Avancement du projet par semaines, les fonctionnalités sont détaillés dans les notes techniques.
     L'ensemble des commits est disponible sur `l'organisation github <https://github.com/orgs/NemesisDrone/repositories>`_.
-Semaine 22/01 - 29/01
+
+Semaine 22/01 - 28/01
 ---------------------
 
+    .. admonition:: Pierre
+
+        - Construction d'un avion.
+        - Gestion de la réception de la radio-commande depuis le raspberry.
+        - Implémentation d'un système de configuration multiple de modèle de vol ( GPIOs, canaux pour moteur brushless et servos ) envoyé/demandé au/par le drone.
+        - Fixs, ajouts autre et refactos, données de teste (replay et autre), teste/calibrage/visualisation des erreur IMU
 
 Semaine 15/01 - 21/01
 ---------------------
