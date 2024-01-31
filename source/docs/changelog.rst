@@ -15,6 +15,10 @@ Semaine 22/01 - 28/01
         - Implémentation d'un système de configuration multiple de modèle de vol ( GPIOs, canaux pour moteur brushless et servos ) envoyé/demandé au/par le drone.
         - Fixs, ajouts autre et refactos, données de teste (replay et autre), teste/calibrage/visualisation des erreur IMU
 
+.. admonition:: Nicolas
+
+    - Stream vidéo en H264 via UDP au lieu de JPEG.
+
 Semaine 15/01 - 21/01
 ---------------------
 
