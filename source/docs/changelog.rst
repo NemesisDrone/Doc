@@ -5,12 +5,33 @@ Changements
     Avancement du projet par semaines, les fonctionnalités sont détaillés dans les notes techniques.
     L'ensemble des commits est disponible sur `l'organisation github <https://github.com/orgs/NemesisDrone/repositories>`_.
 
+Semaine 5/02 - 11/02
+---------------------
+
+.. admonition:: Pierre
+    
+    - Continuation de la construction d'un avion : Entoilage de l'ailes et empennage arrière/gouvernes de direction.
+    - Fixs et améliorations, performances du composant de radiocommande.
+    - Développement d'un système d'enregistrement de session de vol, gestion depuis l'interface, enregistrement des capteurs...
+    - Ajout du suivi des erreurs en production du backend via Sentry.
+
+Semaine 29/01 - 4/02
+---------------------
+
+.. admonition:: Pierre
+    
+    - Continuation de la construction d'un avion : Ailes, empennage arrière.
+    - Implémentation de la réception RC pour servos-moteur et brushless, ajout de mode de switch de mode de vol.
+    - Gestion de l'alimentation du raspberry et moteur brushless via une seule batterie.
+    - Fixs et améliorations (Replay, UI, Modèle de config...).
+    - Commencement du développement d'un système d'enregistrement de session de vol.
+
 Semaine 22/01 - 28/01
 ---------------------
 
 .. admonition:: Pierre
 
-    - Construction d'un avion.
+    - Construction d'un avion : Fuselage et ailes.
     - Gestion de la réception de la radio-commande depuis le raspberry.
     - Implémentation d'un système de configuration multiple de modèle de vol ( GPIOs, canaux pour moteur brushless et servos ) envoyé/demandé au/par le drone.
     - Fixs, ajouts autre et refactos, données de teste (replay et autre), teste/calibrage/visualisation des erreur IMU
