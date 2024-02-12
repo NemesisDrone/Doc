@@ -4,6 +4,9 @@ Changements
 .. note::
     Avancement du projet par semaines, les fonctionnalités sont détaillés dans les notes techniques.
     L'ensemble des commits est disponible sur `l'organisation github <https://github.com/orgs/NemesisDrone/repositories>`_.
+Semaine 12/02 - 17/02
+---------------------
+
 
 Semaine 5/02 - 11/02
 ---------------------
@@ -26,6 +29,10 @@ Semaine 29/01 - 4/02
     - Fixs et améliorations (Replay, UI, Modèle de config...).
     - Commencement du développement d'un système d'enregistrement de session de vol.
 
+    .. admonition:: Emilio
+    -Apprentissage VueJS
+
+
 Semaine 22/01 - 28/01
 ---------------------
 
@@ -35,6 +42,9 @@ Semaine 22/01 - 28/01
     - Gestion de la réception de la radio-commande depuis le raspberry.
     - Implémentation d'un système de configuration multiple de modèle de vol ( GPIOs, canaux pour moteur brushless et servos ) envoyé/demandé au/par le drone.
     - Fixs, ajouts autre et refactos, données de teste (replay et autre), teste/calibrage/visualisation des erreur IMU
+
+.. admonition:: Emilio
+    -Apprentissage VueJS
 
 .. admonition:: Nicolas
 
@@ -52,6 +62,7 @@ Semaine 15/01 - 21/01
 
 .. admonition:: Emilio
     -Apprentissage JavaScript
+    -Apprentissage CSS
 
 .. admonition:: Nicolas
 
