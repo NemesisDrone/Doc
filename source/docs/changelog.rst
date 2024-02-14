@@ -18,6 +18,11 @@ Semaine 5/02 - 11/02
     - Développement d'un système d'enregistrement de session de vol, gestion depuis l'interface, enregistrement des capteurs...
     - Ajout du suivi des erreurs en production du backend via Sentry.
 
+.. admonition:: Nicolas
+
+    - Accès à internet avec le SIM7600.
+    - Données de puissance du réseau capté par le SIM7600.
+
 Semaine 29/01 - 4/02
 ---------------------
 
