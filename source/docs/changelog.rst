@@ -9,7 +9,8 @@ Semaine 12/02 - 17/02
 ---------------------
 
 .. admonition:: Nicolas
-    - Accélération matériel pour l'encodage en H264 du stream vidéo.
+
+    - Accélération matérielle pour l'encodage en H264 du stream vidéo.
 
 Semaine 5/02 - 11/02
 ---------------------
