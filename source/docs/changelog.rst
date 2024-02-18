@@ -37,8 +37,9 @@ Semaine 29/01 - 4/02
     - Fixs et améliorations (Replay, UI, Modèle de config...).
     - Commencement du développement d'un système d'enregistrement de session de vol.
 
-    .. admonition:: Emilio
-    -Apprentissage VueJS
+.. admonition:: Emilio
+
+    - Apprentissage VueJS
 
 
 Semaine 22/01 - 28/01
@@ -52,7 +53,7 @@ Semaine 22/01 - 28/01
     - Fixs, ajouts autre et refactos, données de teste (replay et autre), teste/calibrage/visualisation des erreur IMU
 
 .. admonition:: Emilio
-    -Apprentissage VueJS
+    - Apprentissage VueJS
 
 .. admonition:: Nicolas
 
@@ -69,8 +70,9 @@ Semaine 15/01 - 21/01
     - Refacto websocket, composant de communication sur le drone, fausse donnée de replay et images de monitoring...
 
 .. admonition:: Emilio
-    -Apprentissage JavaScript
-    -Apprentissage CSS
+
+    - Apprentissage JavaScript
+    - Apprentissage CSS
 
 .. admonition:: Nicolas
 
