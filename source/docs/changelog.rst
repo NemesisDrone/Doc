@@ -4,9 +4,12 @@ Changements
 .. note::
     Avancement du projet par semaines, les fonctionnalités sont détaillés dans les notes techniques.
     L'ensemble des commits est disponible sur `l'organisation github <https://github.com/orgs/NemesisDrone/repositories>`_.
+
 Semaine 12/02 - 17/02
 ---------------------
 
+.. admonition:: Nicolas
+    - Accélération matériel pour l'encodage en H264 du stream vidéo.
 
 Semaine 5/02 - 11/02
 ---------------------
