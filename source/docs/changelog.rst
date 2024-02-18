@@ -36,7 +36,7 @@ Semaine 29/01 - 4/02
 
 .. admonition:: Emilio
 
-    -Apprentissage VueJS
+    - Apprentissage VueJS
 
 
 Semaine 22/01 - 28/01
@@ -50,7 +50,7 @@ Semaine 22/01 - 28/01
     - Fixs, ajouts autre et refactos, données de teste (replay et autre), teste/calibrage/visualisation des erreur IMU
 
 .. admonition:: Emilio
-    -Apprentissage VueJS
+    - Apprentissage VueJS
 
 .. admonition:: Nicolas
 
@@ -68,8 +68,8 @@ Semaine 15/01 - 21/01
 
 .. admonition:: Emilio
 
-    -Apprentissage JavaScript
-    -Apprentissage CSS
+    - Apprentissage JavaScript
+    - Apprentissage CSS
 
 .. admonition:: Nicolas
 
