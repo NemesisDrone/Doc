@@ -8,6 +8,11 @@ Changements
 Semaine 12/02 - 17/02
 ---------------------
 
+.. admonition:: Pierre
+    
+    - Continuation de la construction d'un avion.
+    - Reverse engineering de logiciel de simulation de vol et début d'implémentation d'un logiciel permettant d'interfacer un modèle de vol autonome a Picasim
+
 .. admonition:: Nicolas
 
     - Accélération matérielle pour l'encodage en H264 du stream vidéo.
