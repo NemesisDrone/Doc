@@ -5,7 +5,24 @@ Changements
     Avancement du projet par semaines, les fonctionnalités sont détaillés dans les notes techniques.
     L'ensemble des commits est disponible sur `l'organisation github <https://github.com/orgs/NemesisDrone/repositories>`_.
 
-Semaine 12/02 - 17/02
+Semaine 26/02 - 3/03
+---------------------
+
+.. admonition:: Pierre
+    
+    - Continuation de la construction d'un avion.
+    - Développement d'un modèle simple de vol autonome. Altitude/Pitch, Direction/Roll/Yaw
+
+Semaine 19/02 - 25/02
+---------------------
+
+.. admonition:: Pierre
+    
+    - Continuation de la construction d'un avion.
+    - Création d'un wrapper de simulation de vol pour Picasim, permettant de créer des modèle de vol autonome.
+    - Développement d'un modèle simple de vol autonome. Altitude/Pitch seulement
+
+Semaine 12/02 - 18/02
 ---------------------
 
 .. admonition:: Pierre
