@@ -5,6 +5,7 @@ Changements
     Avancement du projet par semaines, les fonctionnalités sont détaillés dans les notes techniques.
     L'ensemble des commits est disponible sur `l'organisation github <https://github.com/orgs/NemesisDrone/repositories>`_.
 
+
 Semaine 26/02 - 3/03
 ---------------------
 
@@ -22,6 +23,11 @@ Semaine 19/02 - 25/02
     - Création d'un wrapper de simulation de vol pour Picasim, permettant de créer des modèle de vol autonome.
     - Développement d'un modèle simple de vol autonome. Altitude/Pitch seulement
 
+.. admonition:: Hugo
+
+    - Construction du prototype 2.
+    - Tests pour le vol autonome via le simulateur de vol.
+
 Semaine 12/02 - 18/02
 ---------------------
 
@@ -33,6 +39,10 @@ Semaine 12/02 - 18/02
 .. admonition:: Nicolas
 
     - Accélération matérielle pour l'encodage en H264 du stream vidéo.
+
+.. admonition:: Hugo
+
+    - Construction du prototype 2.
 
 Semaine 5/02 - 11/02
 ---------------------
@@ -49,6 +59,10 @@ Semaine 5/02 - 11/02
     - Accès à internet avec le SIM7600.
     - Données de puissance du réseau capté par le SIM7600.
 
+.. admonition:: Hugo
+
+    - Construction du prototype 2.
+
 Semaine 29/01 - 4/02
 ---------------------
 
@@ -63,6 +77,11 @@ Semaine 29/01 - 4/02
 .. admonition:: Emilio
 
     - Apprentissage VueJS
+
+.. admonition:: Hugo
+
+    - Construction du prototype 2, 3D.
+    - Calibrage et intégration propre de l'IMU, tentatives d'amélioration de la data.
 
 
 Semaine 22/01 - 28/01
@@ -81,6 +100,11 @@ Semaine 22/01 - 28/01
 .. admonition:: Nicolas
 
     - Stream vidéo en H264 via UDP au lieu de JPEG.
+
+.. admonition:: Hugo
+
+    - Construction du prototype 2.
+    - Calibrage et intégration propre de l'IMU, tentatives d'amélioration de la data.
 
 Semaine 15/01 - 21/01
 ---------------------
@@ -101,6 +125,10 @@ Semaine 15/01 - 21/01
 
     - Augmentation du contraste pour l'affichage du yaw/pitch/roll.
     - Tentative de passage de flux JPEG-JEPG en flux H264-JPEG.
+
+.. admonition:: Hugo
+
+    - Construction du prototype 2.
 
 Semaine 8/01 - 14/01
 ---------------------
