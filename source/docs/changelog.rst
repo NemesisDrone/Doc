@@ -10,6 +10,11 @@ Semaine 8/04 - 14/04
 
 .. admonition:: Pierre
     
+    - Passage de la visualisation du drone en 3D sous quaternions.
+
+.. admonition:: Pierre
+    
+    - Développement du composant gérant l'IMU.
     - Réparation de l'avion	et vol de l'avion.
 
 Semaine 1/04 - 7/04
@@ -25,7 +30,7 @@ Semaine 25/03 - 31/03
 .. admonition:: Pierre
     
     - Constructions/Réparations de l'avion
-    - Test du nouvel IMU
+    - Test et calibration du nouvel IMU
 
 Semaine 18/03 - 24/03
 ---------------------
