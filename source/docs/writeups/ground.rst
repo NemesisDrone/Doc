@@ -5,9 +5,13 @@ Cette note technique décrit l'architecture utilisée par le serveur localisé a
 
 Serveur NVS
 -----------
-Le serveur NVS s'occupe de partager le flux vidéo des clients vers les autres.
-Le serveur NVS accepte toutes les connexions entrantes. Toutes les données envoyées par chacun des clients
-sont retransmises aux autres. Etant donné que les données reçues sur le serveur sont toujours considérées
-comme des données JPEG brutes, l'ajout de données EXIF est fait entre la réception et l'envoie.
-Etant donné que le drone a un buffer maximal de 2 frames, aucun système de timestamp n'est utilisé, les données
-renvoyées par le serveur NVS n'ont également pas de timestamp.
+
+Flux entrant
+^^^^^^^^^^^^
+Un seul flux entrant à la fois est accepté.
+Le flux vidéo est en H264 niveau 3, profil baseline. Le tranfert se fait en UDP (payload 96).
+
+Flux sortant
+^^^^^^^^^^^^
+La connexion se fait via websocket et plusieurs connexions sont acceptées.
+Les données transmises sont les frames de la vidéo au format JPEG. Des données EXIF de position GPS peuvent être ajoutées aux frames.
