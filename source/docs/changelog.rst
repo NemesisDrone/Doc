@@ -6,11 +6,21 @@ Changements
     L'ensemble des commits est disponible sur `l'organisation github <https://github.com/orgs/NemesisDrone/repositories>`_.
 
 
+Semaine 03/06 - 09/06
+----------------------
+
+.. admonition:: Nicolas
+
+    - Tests de transmission vidéo avec Icecast2 en OGG et WEBP
+    - Tests de transmission vidéo en FMP4 via websocket
+    - Connexion automatisée en 4G
+    - Streaming vidéo depuis le matériel embarqué en dehors de Docker.
+
 Semaine 26/02 - 3/03
 ---------------------
 
 .. admonition:: Pierre
-    
+
     - Continuation de la construction d'un avion.
     - Développement d'un modèle simple de vol autonome. Altitude/Pitch, Direction/Roll/Yaw
 
