@@ -5,6 +5,57 @@ Changements
     Avancement du projet par semaines, les fonctionnalités sont détaillés dans les notes techniques.
     L'ensemble des commits est disponible sur `l'organisation github <https://github.com/orgs/NemesisDrone/repositories>`_.
 
+Semaine 8/04 - 14/04
+---------------------
+
+.. admonition:: Pierre
+    
+    - Passage de la visualisation du drone en 3D sous quaternions.
+
+.. admonition:: Pierre
+    
+    - Développement du composant gérant l'IMU.
+    - Réparation de l'avion	et vol de l'avion.
+
+Semaine 1/04 - 7/04
+---------------------
+
+.. admonition:: Pierre
+    
+    - Vol de l'avion
+
+Semaine 25/03 - 31/03
+---------------------
+
+.. admonition:: Pierre
+    
+    - Constructions/Réparations de l'avion
+    - Test et calibration du nouvel IMU
+
+Semaine 18/03 - 24/03
+---------------------
+
+.. admonition:: Pierre
+    
+    - Constructions/Réparations de l'avion
+
+Semaine 11/03 - 17/03
+---------------------
+
+.. admonition:: Pierre
+    
+    - Premier vol de l'avion construit.
+    - Ajout d'un système d'envoie/récupération d'objectif de vol : Altitude, Direction.
+
+
+Semaine 4/03 - 10/03
+---------------------
+
+.. admonition:: Pierre
+    
+    - Continuation de la construction d'un avion.
+    - Fixs simulateur
+
 
 Semaine 03/06 - 09/06
 ----------------------
